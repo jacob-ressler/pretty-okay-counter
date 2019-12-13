@@ -21,7 +21,7 @@ public class ClickerPane extends StackPane {
 	String style1 = "-fx-font: bolder 140 arial; -fx-alignment: center; -fx-stroke: black; -fx-stroke-width: 3px;";
 
 	public ClickerPane() {
-		Image bg = new Image("grookeybg.png");
+		Image bg = new Image("images/grookeybg.png");
 
 		setBackground(new Background(
 				new BackgroundImage(bg, BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER,
