@@ -8,12 +8,12 @@ This application runs off of mouse and keyboard inputs, for the sake of simplici
 
 ### Mouse Controls
 
-**Left Click** increments the counter by 1.
-**Right Click** decrements the counter by 1.
+**Left Click** increments the counter by 1.  
+**Right Click** decrements the counter by 1.  
 **Middle Click** resets the counter to 0.
 
 ### Keyboard Controls
 
-**S** opens a dialogue to set the counter value.
-**R** resets the counter to 0.
+**S** opens a dialogue to set the counter value.  
+**R** resets the counter to 0.  
 **I** opens a dialogue to change the Pokemon image being displayed.
