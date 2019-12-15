@@ -3,6 +3,7 @@ package gui;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
@@ -21,11 +22,13 @@ public class ClickerPane extends StackPane {
 	String style1 = "-fx-font: bolder 140 arial; -fx-alignment: center; -fx-stroke: black; -fx-stroke-width: 3px;";
 
 	public ClickerPane() {
-		Image bg = new Image("images/grookeybg.png");
-
-		setBackground(new Background(
-				new BackgroundImage(bg, BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER,
-						new BackgroundSize(Clicker.WIDTH, Clicker.HEIGHT, false, false, true, false))));
+		Background grookeybg = new Background(
+				new BackgroundImage(new Image("images/grookeybg.png"), BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER,
+						new BackgroundSize(Clicker.WIDTH, Clicker.HEIGHT, false, false, true, false)));
+		
+		Background chromabg = new Background(new BackgroundFill(new Color(0, 1, 0, 1), null, null));
+		
+		setBackground(chromabg);
 
 		getChildren().addAll(countText, img);
 
